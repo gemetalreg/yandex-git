@@ -1,4 +1,3 @@
 # Yandex git course
----
-1. Intersting
+1. Interesting
 2. Simple
