@@ -7,7 +7,9 @@
    git init
    ```
    
-   Watch project status
+   Files in project have 4 status: untracked, tracked, staged, modified.
+   
+   Watch files status
    ```
    git status
    ```
