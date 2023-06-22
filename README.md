@@ -33,6 +33,8 @@
    git log --oneline
    ```
 
+   Head is a file, that link to last commit.
+
    Remote add github repository named by origin
    ```
    git remote add origin repository-link
