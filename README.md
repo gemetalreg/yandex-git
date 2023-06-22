@@ -24,6 +24,15 @@
    git commit -m "Some changes"
    ```
 
+   Git log show information about commits: their hashes, Author, date and message.
+   ```
+   git log
+   ```
+   Also, there's short version of git log
+   ```
+   git log --oneline
+   ```
+
    Remote add github repository named by origin
    ```
    git remote add origin repository-link
