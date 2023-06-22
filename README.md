@@ -8,7 +8,12 @@
    ```
    
    Files in project have 4 status: untracked, tracked, staged, modified.
-   
+   ```mermaid
+   graph LR;
+   untracked -- "git add <file>" --> staged;
+   staged    -- "git commit -m <message>" --> tracked/comitted;
+   ```
+
    Watch files status
    ```
    git status
