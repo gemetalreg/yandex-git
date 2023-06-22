@@ -28,6 +28,21 @@
    ```
    git commit -m "Some changes"
    ```
+   
+   Git revert changes in modified file in working directory
+   ```
+   git restore <file>
+   ```
+
+   Git revert changes in file in staged
+   ```
+   git restore --staged <file>
+   ```
+
+   Git reset to old commit, unchangeable
+   ```
+   git reset --hard <commit hash>
+   ```
 
    Git log show information about commits: their hashes, Author, date and message.
    ```
