@@ -13,6 +13,13 @@
    untracked -- "git add <file>" --> staged;
    staged    -- "git commit -m <message>" --> tracked/comitted;
    ```
+   
+   After first commit
+   ```mermaid
+   graph LR;
+   modified -- "git add <file>" --> staged;
+   staged    -- "git commit -m <message>" --> tracked/comitted;
+   ```
 
    Watch files status
    ```
