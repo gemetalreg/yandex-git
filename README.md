@@ -47,6 +47,11 @@
    ```
    git commit -m "Some changes"
    ```
+   Addding staging changes to last commit
+   ```
+   git commit --amend --no-edit
+   git commit --amend -m "<new message>"
+   ```
    
    Git revert changes in modified file in working directory
    ```
