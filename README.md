@@ -20,6 +20,14 @@
    modified -- "git add <file>" --> staged;
    staged    -- "git commit -m <message>" --> tracked/comitted;
    ```
+   To see differences between commit and modified
+   ```
+   git diff
+   ```
+   To see differences between commit and staged
+   ```
+   git diff --staged
+   ```
 
    Watch files status
    ```
