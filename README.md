@@ -28,6 +28,10 @@
    ```
    git diff --staged
    ```
+   To see differnces betwen commit1 and commit2
+   ```
+   git diff <commit1> <commit2>
+   ```
 
    Watch files status
    ```
