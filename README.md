@@ -17,7 +17,7 @@
    After first commit
    ```mermaid
    graph LR;
-   modified -- "git add <file>" --> staged;
+   modified/tracked -- "git add <file>" --> staged;
    staged    -- "git commit -m <message>" --> tracked/comitted;
    ```
    To see differences between commit and modified
@@ -81,7 +81,7 @@
 
    Remote add github repository named by origin
    ```
-   git remote add origin repository-link
+   git remote add origin <repository-link>
    ```
 
    Make upstream for pushing git changes for first time
@@ -91,7 +91,7 @@
 
    For second and etc
    ```
-   git push origin main
+   git push
    ```
 
    
