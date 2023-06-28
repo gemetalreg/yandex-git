@@ -32,7 +32,10 @@
    ```
    git diff <commit1> <commit2>
    ```
-
+   Compare barnches
+   ```
+   git diff <branch_name1> <branch_name2>
+   ```
    Watch files status
    ```
    git status
@@ -110,4 +113,11 @@
    ```
    git branch <branch_name>
    ```
-   
+   Switch to another branch
+   ```
+   git checkout <branch name>
+   ```
+   Create a branch and immediately switch to it
+   ```
+   git checkout -b <branch name>
+   ```
