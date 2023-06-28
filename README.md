@@ -89,6 +89,10 @@
    origin    git@github.com:yandex-praktikum/git-clone-lesson.git (fetch)
    origin    git@github.com:yandex-praktikum/git-clone-lesson.git (push)
    ```
+   Create a copy of the remote repository on your computer
+   ```
+   git clone <https://github.com/yandex-praktikum/git-clone-lesson>
+   ```
    Make upstream for pushing git changes for first time
    ```
    git push -u origin main
