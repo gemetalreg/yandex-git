@@ -102,5 +102,8 @@
    ```
    git push
    ```
-
+   Braches view command
+   ```
+   git branch
+   ```
    
