@@ -106,4 +106,8 @@
    ```
    git branch
    ```
+   Create new branch
+   ```
+   git branch <branch_name>
+   ```
    
