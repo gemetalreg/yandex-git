@@ -31,6 +31,8 @@
    To see differnces betwen commit1 and commit2
    ```
    git diff <commit1> <commit2>
+   or
+   git diff HEAD~ HEAD
    ```
    Compare barnches
    ```
