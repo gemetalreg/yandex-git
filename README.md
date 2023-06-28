@@ -113,7 +113,20 @@
    ```
    View all branches, including remotes branches
    ```
-   git branch -a
+   $ git branch -a
+   * main
+     remotes/origin/HEAD
+     remotes/origin/main
+     remotes/origin/v1.0-stable
+     remotes/origin/experimental
+   ```
+   To take a quick look at an upstream branch, check it out directly:
+   ```
+   git checkout origin/experimental
+   ```
+   To work on that branch, create a local tracking branch, which is done automatically by:
+   ```
+   git checkout experimental
    ```
    Create new branch
    ```
