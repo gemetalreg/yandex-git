@@ -83,7 +83,12 @@
    ```
    git remote add origin <repository-link>
    ```
-
+   Make sure the repositories are linked
+   ```
+   $ git remote -v
+   origin    git@github.com:yandex-praktikum/git-clone-lesson.git (fetch)
+   origin    git@github.com:yandex-praktikum/git-clone-lesson.git (push)
+   ```
    Make upstream for pushing git changes for first time
    ```
    git push -u origin main
