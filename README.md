@@ -34,7 +34,7 @@
    or
    git diff HEAD~ HEAD
    ```
-   Compare barnches
+   Compare branches
    ```
    git diff <branch_name1> <branch_name2>
    ```
@@ -107,9 +107,13 @@
    ```
    git push
    ```
-   Braches view command
+   Branches view command
    ```
    git branch
+   ```
+   View all branches, including remotes branches
+   ```
+   git branch -a
    ```
    Create new branch
    ```
