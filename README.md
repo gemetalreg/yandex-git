@@ -101,8 +101,9 @@
    Make upstream for pushing git changes for first time
    ```
    git push -u origin main
+   or for another branch
+   git push -u origin feature/merge-request
    ```
-
    For second and etc
    ```
    git push
