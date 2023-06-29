@@ -148,4 +148,8 @@
    Delete branch after merge
    ```
    git branch -D feature/diff
+   or
+   git branch -d feature/diff
    ```
+   1. The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch.
+   2. The -D option is an alias for --delete --force, which deletes the branch "irrespective of its merged status."
