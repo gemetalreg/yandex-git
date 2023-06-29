@@ -140,3 +140,12 @@
    ```
    git checkout -b <branch name>
    ```
+   Before starting the merge process, you need to go to the branch where the changes should be added. For exmaple if we want to merge feature/diff into main:
+   ```
+   git checkout main
+   git merge feature/diff
+   ```
+   Delete branch after merge
+   ```
+   git branch -D feature/diff
+   ```
