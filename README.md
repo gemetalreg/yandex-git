@@ -108,6 +108,10 @@
    ```
    git push
    ```
+   Take changes from remote branch
+   ```
+   git pull
+   ```
    Branches view command
    ```
    git branch
