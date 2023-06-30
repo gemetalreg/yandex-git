@@ -104,7 +104,7 @@
    or for another branch
    git push -u origin feature/merge-request
    ```
-   For second and etc
+   For second and etc files in current branch
    ```
    git push
    ```
