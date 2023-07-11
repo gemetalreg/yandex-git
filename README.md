@@ -166,3 +166,27 @@
    ```
    1. The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch.
    2. The -D option is an alias for --delete --force, which deletes the branch "irrespective of its merged status."
+  
+   Keeping Fork Up To Date
+   1. Origin is a fork
+   ```
+   git remote -v
+   origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+   origin  https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+   ```
+   2. Upstream is basic project
+   ```
+   git remote add upstream https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git
+   ```
+   3. Verify the new upstream repository
+   ```
+   git remote -v
+   origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (fetch)
+   origin    https://github.com/YOUR_USERNAME/YOUR_FORK.git (push)
+   upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (fetch)
+   upstream  https://github.com/ORIGINAL_OWNER/ORIGINAL_REPOSITORY.git (push)
+   ```
+   4. Synced fork with the upstream repository
+   ```
+   git pull upstream main
+   ```
