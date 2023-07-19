@@ -190,7 +190,7 @@
    ```
    git pull upstream main
    ```
-   Fast-forward merge
+   Fast-forward state
    Две ветки находятся в состоянии fast-forward, если одну из них можно «перемотать» вперёд и она будет содержать те же коммиты, что и другая.
    ```bash
    $ git branch
@@ -222,6 +222,73 @@
    5848aba Commit 2
    04923d7 Commit 1
    ```
+   Disdable Fast-forward
+   ```
+   git merge --no-ff add-docs
+   or
+   git config [--global] merge.ff false
+   ```
+   If Fast-forward is disbled, merge will create merge commit
+   ```bash
+      # находимся в ветке main
+   # --no-edit отключает ввод сообщения для merge-коммита
+   # --no-ff отключает fast-forward слияние веток
+   $ git merge --no-edit --no-ff add-docs
+   Merge made by the 'ort' strategy.
+    docs.txt | 1 +
+    1 file changed, 1 insertion(+)
+    create mode 100644 docs.txt
+   
+   # с флагом --graph
+   # Git нарисует ветки с помощью «палочек» и «звёздочек»
+   # получившийся коммит слияния: 6814789
+   $ git log --graph --oneline
+   *   6814789 (HEAD -> main) Merge branch 'add-docs'
+   |\
+   | * e08fa2a (add-docs) New docs 2
+   | * fd588b2 New docs 1
+   |/
+   * 997d9ce Commit 4
+   * 0313e8e Commit 3
+   * 5848aba Commit 2
+   * 04923d7 Commit 1
+   ```
+   Non-fast-forward state: the stories of two branches "diverge"
+   ```bash
+   # команде git log можно указать несколько веток,
+   # и тогда она выведет их все
+   $ git log --graph --oneline main add-docs
+   * 15d3f04 (HEAD -> main) Commit 5
+   | * 8de42eb (add-docs) New docs 2
+   | * 4d3c346 New docs 1
+   |/
+   * 73def1e Commit 4
+   * 9c30ab3 Commit 3
+   * 83cc5ec Commit 2
+   * 8e87fb2 Commit 1
+   ```
+   When merging non-fast-forward branches, Git creates a merge commit.
+   ```bash
+      # находимся в ветке main
+   # --no-edit избавляет от необходимости
+   # вводить сообщение для merge-коммита
+   $ git merge --no-edit add-docs
+   Merge made by the 'ort' strategy.
+    docs.txt | 1 +
+    1 file changed, 1 insertion(+)
+    create mode 100644 docs.txt
+   
+   # коммит слияния: 34f5f8f
+   $ git log --graph --oneline
+   *   34f5f8f (HEAD -> main) Merge branch 'add-docs'
+   |\
+   | * 8de42eb (add-docs) New docs 2
+   | * 4d3c346 New docs 1
+   * | 15d3f04 Commit 5
+   |/
+   * 73def1e Commit 4
+   * 9c30ab3 Commit 3
+   * 83cc5ec Commit 2
+   * 8e87fb2 Commit 1
+   ```
 
-   
-   
