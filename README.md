@@ -190,3 +190,38 @@
    ```
    git pull upstream main
    ```
+   Fast-forward merge
+   Две ветки находятся в состоянии fast-forward, если одну из них можно «перемотать» вперёд и она будет содержать те же коммиты, что и другая.
+   ```bash
+   $ git branch
+   * add-docs
+     main
+   
+   $ git log --oneline
+   e08fa2a (HEAD -> add-docs) New docs 2
+   fd588b2 New docs 1
+   997d9ce (main) Commit 4
+   0313e8e Commit 3
+   5848aba Commit 2
+   04923d7 Commit 1
+
+   $ git checkout main
+   
+   $ git merge add-docs
+   Updating 997d9ce..e08fa2a
+   Fast-forward
+    docs.txt | 1 +
+    1 file changed, 1 insertion(+)
+    create mode 100644 docs.txt
+   
+   $ git log --oneline
+   e08fa2a (HEAD -> main, add-docs) New docs 2
+   fd588b2 New docs 1
+   997d9ce Commit 4
+   0313e8e Commit 3
+   5848aba Commit 2
+   04923d7 Commit 1
+   ```
+
+   
+   
