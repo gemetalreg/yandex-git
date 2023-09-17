@@ -116,6 +116,13 @@
    ```
    git pull
    ```
+   If conflict
+   ```
+   git pull origin main --rebase
+   ```
+   pull = fetch + merge
+   pull --rebase = fetch + rebase
+
    Pre pull request
    ```
    git checkout main # перешли в main
