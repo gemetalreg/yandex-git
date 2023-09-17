@@ -2,6 +2,10 @@
 1. Interesting
 2. Simple
 
+   Watch git config data
+   ```
+   git config --list
+   ```
    Create git project
    ```
    git init
