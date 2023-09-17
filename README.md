@@ -156,6 +156,10 @@
    ```
    git branch <branch_name>
    ```
+   Rename branch
+   ```
+   git branch -M <new_branch_name>
+   ```
    Switch to another branch
    ```
    git checkout <branch name>
