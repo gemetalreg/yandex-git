@@ -160,6 +160,10 @@
    ```
    git branch -M <new_branch_name>
    ```
+   Go to old hash in branch
+   ```
+   git branch -f <branch_name> <hash>
+   ``` 
    Switch to another branch
    ```
    git checkout <branch name>
