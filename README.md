@@ -168,6 +168,14 @@
    ```
    git checkout -b <branch name>
    ```
+   Git cntrl+c
+   ```
+   git stash
+   ```
+   Git cntrl+v
+   ```
+   git stash pop
+   ```
    Before starting the merge process, you need to go to the branch where the changes should be added. For exmaple if we want to merge feature/diff into main:
    ```
    git checkout main
