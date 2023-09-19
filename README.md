@@ -172,6 +172,14 @@
    ```
    git checkout -b <branch name>
    ```
+   Detached HEAD, when HEAD link not to branch, but on the hash
+   ```
+   git checkout <hash>
+   ```
+   Restore file from old commit
+   ```
+   git checkout <hash> <file>
+   ```
    Git cntrl+c
    ```
    git stash
