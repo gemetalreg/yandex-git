@@ -160,7 +160,7 @@
    ```
    git branch -M <new_branch_name>
    ```
-   Go to old hash in branch
+   Branch moving (branch forcing). Move branch to old hash.
    ```
    git branch -f <branch_name> <hash>
    ``` 
