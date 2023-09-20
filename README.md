@@ -201,7 +201,15 @@
    ```
    1. The -d option is an alias for --delete, which only deletes the branch if it has already been fully merged in its upstream branch.
    2. The -D option is an alias for --delete --force, which deletes the branch "irrespective of its merged status."
-  
+
+   Copy commit from one branch to another (merge analog), may change commit message using --edit flag
+   ```
+   git cherry-pick <hash>
+   or
+   git cherry-pick <hash> --edit
+   or
+   git cherry-pick <hash> --no-commit
+   ```
    Keeping Fork Up To Date
    1. Origin is a fork
    ```
